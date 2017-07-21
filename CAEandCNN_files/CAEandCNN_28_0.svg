@@ -1,0 +1,131 @@
+<svg height="921pt" viewBox="0.00 0.00 218.00 921.00" width="218pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 917)">
+<title>G</title>
+<polygon fill="white" points="-4,4 -4,-917 214,-917 214,4 -4,4" stroke="none"/>
+<!-- 139786593370256 -->
+<g class="node" id="node1"><title>139786593370256</title>
+<polygon fill="none" points="0,-876.5 0,-912.5 210,-912.5 210,-876.5 0,-876.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-890.8">convolution2d_input_6: InputLayer</text>
+</g>
+<!-- 139786593372560 -->
+<g class="node" id="node2"><title>139786593372560</title>
+<polygon fill="none" points="34.5,-803.5 34.5,-839.5 175.5,-839.5 175.5,-803.5 34.5,-803.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-817.8">conv1: Convolution2D</text>
+</g>
+<!-- 139786593370256&#45;&gt;139786593372560 -->
+<g class="edge" id="edge1"><title>139786593370256-&gt;139786593372560</title>
+<path d="M105,-876.313C105,-868.289 105,-858.547 105,-849.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-849.529 105,-839.529 101.5,-849.529 108.5,-849.529" stroke="black"/>
+</g>
+<!-- 139786593372112 -->
+<g class="node" id="node3"><title>139786593372112</title>
+<polygon fill="none" points="1.5,-730.5 1.5,-766.5 208.5,-766.5 208.5,-730.5 1.5,-730.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-744.8">maxpooling2d_11: MaxPooling2D</text>
+</g>
+<!-- 139786593372560&#45;&gt;139786593372112 -->
+<g class="edge" id="edge2"><title>139786593372560-&gt;139786593372112</title>
+<path d="M105,-803.313C105,-795.289 105,-785.547 105,-776.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-776.529 105,-766.529 101.5,-776.529 108.5,-776.529" stroke="black"/>
+</g>
+<!-- 139786774797968 -->
+<g class="node" id="node4"><title>139786774797968</title>
+<polygon fill="none" points="34.5,-657.5 34.5,-693.5 175.5,-693.5 175.5,-657.5 34.5,-657.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-671.8">conv2: Convolution2D</text>
+</g>
+<!-- 139786593372112&#45;&gt;139786774797968 -->
+<g class="edge" id="edge3"><title>139786593372112-&gt;139786774797968</title>
+<path d="M105,-730.313C105,-722.289 105,-712.547 105,-703.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-703.529 105,-693.529 101.5,-703.529 108.5,-703.529" stroke="black"/>
+</g>
+<!-- 139786691907088 -->
+<g class="node" id="node5"><title>139786691907088</title>
+<polygon fill="none" points="1.5,-584.5 1.5,-620.5 208.5,-620.5 208.5,-584.5 1.5,-584.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-598.8">maxpooling2d_12: MaxPooling2D</text>
+</g>
+<!-- 139786774797968&#45;&gt;139786691907088 -->
+<g class="edge" id="edge4"><title>139786774797968-&gt;139786691907088</title>
+<path d="M105,-657.313C105,-649.289 105,-639.547 105,-630.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-630.529 105,-620.529 101.5,-630.529 108.5,-630.529" stroke="black"/>
+</g>
+<!-- 139786775066960 -->
+<g class="node" id="node6"><title>139786775066960</title>
+<polygon fill="none" points="34.5,-511.5 34.5,-547.5 175.5,-547.5 175.5,-511.5 34.5,-511.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-525.8">conv3: Convolution2D</text>
+</g>
+<!-- 139786691907088&#45;&gt;139786775066960 -->
+<g class="edge" id="edge5"><title>139786691907088-&gt;139786775066960</title>
+<path d="M105,-584.313C105,-576.289 105,-566.547 105,-557.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-557.529 105,-547.529 101.5,-557.529 108.5,-557.529" stroke="black"/>
+</g>
+<!-- 139786691860240 -->
+<g class="node" id="node7"><title>139786691860240</title>
+<polygon fill="none" points="28.5,-438.5 28.5,-474.5 181.5,-474.5 181.5,-438.5 28.5,-438.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-452.8">encoded: MaxPooling2D</text>
+</g>
+<!-- 139786775066960&#45;&gt;139786691860240 -->
+<g class="edge" id="edge6"><title>139786775066960-&gt;139786691860240</title>
+<path d="M105,-511.313C105,-503.289 105,-493.547 105,-484.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-484.529 105,-474.529 101.5,-484.529 108.5,-484.529" stroke="black"/>
+</g>
+<!-- 139786690894160 -->
+<g class="node" id="node8"><title>139786690894160</title>
+<polygon fill="none" points="50,-365.5 50,-401.5 160,-401.5 160,-365.5 50,-365.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-379.8">flatten_3: Flatten</text>
+</g>
+<!-- 139786691860240&#45;&gt;139786690894160 -->
+<g class="edge" id="edge7"><title>139786691860240-&gt;139786690894160</title>
+<path d="M105,-438.313C105,-430.289 105,-420.547 105,-411.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-411.529 105,-401.529 101.5,-411.529 108.5,-411.529" stroke="black"/>
+</g>
+<!-- 139786690247888 -->
+<g class="node" id="node9"><title>139786690247888</title>
+<polygon fill="none" points="54,-292.5 54,-328.5 156,-328.5 156,-292.5 54,-292.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-306.8">dense_4: Dense</text>
+</g>
+<!-- 139786690894160&#45;&gt;139786690247888 -->
+<g class="edge" id="edge8"><title>139786690894160-&gt;139786690247888</title>
+<path d="M105,-365.313C105,-357.289 105,-347.547 105,-338.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-338.529 105,-328.529 101.5,-338.529 108.5,-338.529" stroke="black"/>
+</g>
+<!-- 139786774149456 -->
+<g class="node" id="node10"><title>139786774149456</title>
+<polygon fill="none" points="27.5,-219.5 27.5,-255.5 182.5,-255.5 182.5,-219.5 27.5,-219.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-233.8">activation_10: Activation</text>
+</g>
+<!-- 139786690247888&#45;&gt;139786774149456 -->
+<g class="edge" id="edge9"><title>139786690247888-&gt;139786774149456</title>
+<path d="M105,-292.313C105,-284.289 105,-274.547 105,-265.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-265.529 105,-255.529 101.5,-265.529 108.5,-265.529" stroke="black"/>
+</g>
+<!-- 139786774150096 -->
+<g class="node" id="node11"><title>139786774150096</title>
+<polygon fill="none" points="42.5,-146.5 42.5,-182.5 167.5,-182.5 167.5,-146.5 42.5,-146.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-160.8">dropout_2: Dropout</text>
+</g>
+<!-- 139786774149456&#45;&gt;139786774150096 -->
+<g class="edge" id="edge10"><title>139786774149456-&gt;139786774150096</title>
+<path d="M105,-219.313C105,-211.289 105,-201.547 105,-192.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-192.529 105,-182.529 101.5,-192.529 108.5,-192.529" stroke="black"/>
+</g>
+<!-- 139786690307152 -->
+<g class="node" id="node12"><title>139786690307152</title>
+<polygon fill="none" points="54,-73.5 54,-109.5 156,-109.5 156,-73.5 54,-73.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-87.8">dense_5: Dense</text>
+</g>
+<!-- 139786774150096&#45;&gt;139786690307152 -->
+<g class="edge" id="edge11"><title>139786774150096-&gt;139786690307152</title>
+<path d="M105,-146.313C105,-138.289 105,-128.547 105,-119.569" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-119.529 105,-109.529 101.5,-119.529 108.5,-119.529" stroke="black"/>
+</g>
+<!-- 139786712857232 -->
+<g class="node" id="node13"><title>139786712857232</title>
+<polygon fill="none" points="27.5,-0.5 27.5,-36.5 182.5,-36.5 182.5,-0.5 27.5,-0.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="105" y="-14.8">activation_11: Activation</text>
+</g>
+<!-- 139786690307152&#45;&gt;139786712857232 -->
+<g class="edge" id="edge12"><title>139786690307152-&gt;139786712857232</title>
+<path d="M105,-73.3129C105,-65.2895 105,-55.5475 105,-46.5691" fill="none" stroke="black"/>
+<polygon fill="black" points="108.5,-46.5288 105,-36.5288 101.5,-46.5289 108.5,-46.5288" stroke="black"/>
+</g>
+</g>
+</svg>
