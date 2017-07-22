@@ -1,7 +1,3 @@
----
-layout: default
----
-
 In this post I will explain my setup for studying effects( !!!spoiler!!! possible benefits) of using pre-initialized weights in a Convolutional Neural Network (CNN). 
 
 I have tried to study the difference by comparing results of a model that started training from random weights with results of the same model that started training from weights given by the convolutional autoencoder. I will be using MNIST to study the difference.
