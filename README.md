@@ -597,7 +597,7 @@ model2.fit(cnn_x_train, cnn_y_train,
 	Out[17]:
 	<keras.callbacks.History at 0x7fd883fc71d0>
 
-```
+
 
 #### Save model
 Always as good practice to store all your models. Never know when you need which.
@@ -609,11 +609,6 @@ model2.save(name)
 
 #### Results of approach 1
 
->97.26%
-
-Too good!! 
-
-
 ```python
 params2 = model2.metrics_names
 results2 = (model2.evaluate(cnn_x_test,cnn_y_test,verbose=0))
@@ -622,10 +617,12 @@ print params2[1]," : ", results2[1]
 ```
 
     loss  :  0.100158229173
-	acc  :  0.9726
+    acc  :  0.9726
 
+>97.26%
 
-
+Too good!! 
+(Easy task, model with too many extra parameters)
 
 
 #### APPROACH 2  :  Unitialiazed CNN 
@@ -687,7 +684,7 @@ model1.fit(cnn_x_train, cnn_y_train,
 	25000/25000 [==============================] - 12s - loss: 0.6144 - acc: 0.7771 - val_loss: 0.0745 - val_acc: 0.9836 - ETA: 8s - loss: 0.6185 - acc: 0.7739
 	Out[14]:
 	<keras.callbacks.History at 0x7fd888fb2910>
-```
+
 
 
 ### Save model
@@ -700,10 +697,6 @@ model1.save(name)
 
 ### Results of approach 2
 
-> 97.06%
-
-Still good!
-
 ```python
 params1 = model1.metrics_names
 results1 = (model1.evaluate(cnn_x_test,cnn_y_test,verbose=0))
@@ -714,9 +707,13 @@ print params1[1]," : ", results1[1]
 
     loss  :  0.119442222269
 	acc  :  0.9706
-```
+
+> 97.06%
+Still good!
+(The difference in accuracy between the approaches ain't that big here)
 
 #### Analysis of results
 
 Using a CAE to initialize weights of a CNN provided additional accuracy of 0.2% over a CNN only model.
-But in the above case, we had 25000 labelled and 25000 unlabelled samples. Consider the case, where we have only 10000 labelled sample (or even less) and similar number of unlabelled samples. In such a case we should see a benefit in accuracy greater than 0.20%.
+But in the above case, we had 25000 labelled and 25000 unlabelled samples. Consider the case, where we have only 10000 labelled sample (or even less) and similar number of unlabelled samples. In such a case we should see a benefit in accuracy greater than 0.20%. 
+Feel free to play around with the number of labelled and unlabelled samples to find out when the benefits are worth the extra training time of the CAE. Use this notebook to get a primary intuition before applying the same to your task.
