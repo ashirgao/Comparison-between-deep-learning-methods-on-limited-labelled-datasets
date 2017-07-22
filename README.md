@@ -717,3 +717,5 @@ Still good!
 Using a CAE to initialize weights of a CNN provided additional accuracy of 0.2% over a CNN only model.
 But in the above case, we had 25000 labelled and 25000 unlabelled samples. Consider the case, where we have only 10000 labelled sample (or even less) and similar number of unlabelled samples. In such a case we should see a benefit in accuracy greater than 0.20%. 
 Feel free to play around with the number of labelled and unlabelled samples to find out when the benefits are worth the extra training time of the CAE. Use this notebook to get a primary intuition before applying the same to your task.
+
+{% include disqus_comments.html %}
