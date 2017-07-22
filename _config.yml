@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+author: Abhishek Shirgokar
+author_email: abhishek.shirgaokar@gmail.com
+comments: True
+title: Comparison between deep learning methods on limited labelled datasets
+description: A notebook to showcase benefits of using a convolutional autoencoder (CAE) to initialize weights of a convolutional neural network (CNN) 
+show_downloads: true
