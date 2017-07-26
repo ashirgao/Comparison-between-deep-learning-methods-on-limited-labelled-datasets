@@ -2,7 +2,7 @@ In this post I will explain my setup for studying effects( !!!spoiler!!! possibl
 
 I have tried to study the difference by comparing results of a model that started training from random weights with results of the same model that started training from weights given by the convolutional autoencoder. I will be using MNIST to study the difference.
 
-For this post, my library of choice is Keras (1.?.?) with Theano serving in its backend. I have used my laptop whuch is equipped with a Nvidia Quadro M1000M for this project. Running the same without a GPU will take a noticably long time although being MNIST it won't be too much.
+For this post, my library of choice is Keras (1.?.?) with Theano serving in its backend. I have used my laptop which is equipped with a Nvidia Quadro M1000M for this project. Running the same without a GPU will take a noticably long time although being MNIST it won't be too much.
 
 So let's begin.
 
@@ -25,7 +25,7 @@ Let us understand the basics of Convolutional Neural Networks(CNN) and Convoluti
 > 2> The decoder
 
 > The encoder is made of convolution and downsampling layers while the decoder is made of deconvolution(convolution) and upsampling layers. The encoder is resposible to encode the image using spatial features into an intermediate representation which holds information of the whole image. The decoder accepts this intermediate representation and tries to regenerate the orignal image. Loss for a CAE is the euclidean distance between respective pixels of the input image and decoded image. As the CAE is trained, we can say that the intermediate representation is an embedding of that image. We can also say that the convolutions in the encoder part of the CAE have become increasingly tuned to extract features from images that were used for the training. 
->This is exactly what we need. If we initialize the CNN with the weights of this encoder, from intution we can infer that the CNN will start looking at more relevant features in image that the convolutions with random initializations. Thus,
+>This is exactly what we need. If we initialize the CNN with the weights of this encoder, from intution we can infer that the CNN will start looking at more relevant features in image than the convolutions with random initializations. Thus,
 >
 >>if we have lots of unlabelled data and limited labelled data, we can use the unlabelled data to train a CAE. Then, we can use the weights from the encoder to initialize weights of CNN. Then we train the CNN on the labelled data.
 >
